@@ -10,10 +10,12 @@
     "test": "jest"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.24",
     "onesignal-node": "^3.0.2",
     "reflect-metadata": "^0.1.13",
@@ -28,7 +30,7 @@
     "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.6",
     "@types/jest": "^26.0.3",
-    "@types/jsonwebtoken": "^8.3.9",
+    "@types/jsonwebtoken": "^8.5.0",
     "@types/mongoose": "^5.7.31",
     "@types/multer": "^1.4.3",
     "@types/web-push": "^3.3.0",

@@ -1,9 +1,13 @@
-import { Router, Request, Response } from 'express';
+import { Router } from 'express';
+import UserController from 'controllers/UserController';
 
-const router = Router();
+import authMiddleware from 'middlewares/auth';
 
-router.post('/', (req: Request, res: Response) => {
-  return res.json('ola');
-});
+const userRouter = Router();
 
-export default router;
+userRouter.use(authMiddleware);
+
+userRouter.post('/', UserController.store);
+userRouter.get('/', UserController.findAll);
+
+export default userRouter;
